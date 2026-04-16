@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undangan Pernikahan</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #fff5fb, #ffffff);
+      color: #444;
+      scroll-behavior: smooth;
+    }
+
+    /* HEADER */
+    .header{
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    .header h1{
+      font-family: 'Great Vibes', cursive;
+      font-size: 55px;
+      color: #d81b60;
+    }
+
+    .header p{
+      margin-top: 15px;
+      font-size: 15px;
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+    }
+
+    hr{
+      width: 70%;
+      margin: 25px auto;
+      border: 0;
+      height: 1px;
+      background: #f3c2d3;
+    }
+
+    /* FOTO SECTION */
+    .gallery{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .gallery img{
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+      transition: 0.4s;
+    }
+
+    .gallery img:hover{
+      transform: scale(1.05);
+    }
+
+    /* CARD */
+    .card{
+      max-width: 700px;
+      background: white;
+      margin: 25px auto;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .card h2{
+      color: #d81b60;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .names{
+      font-size: 28px;
+      font-weight: 600;
+      color: #ad1457;
+      margin-bottom: 10px;
+    }
+
+    .info{
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    /* BUTTON */
+    .btn{
+      display: inline-block;
+      padding: 12px 22px;
+      margin-top: 15px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      font-size: 15px;
+      transition: 0.3s;
+      text-decoration: none;
+      color: white;
+    }
+
+    .btn-maps{
+      background: #4caf50;
+    }
+    .btn-maps:hover{
+      background: #2e7d32;
+    }
+
+    .btn-wa{
+      background: #25d366;
+    }
+    .btn-wa:hover{
+      background: #128c7e;
+    }
+
+    /* COUNTDOWN */
+    .countdown{
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 10px;
+      color: #d81b60;
+    }
+
+    /* FOOTER */
+    footer{
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      font-size: 14px;
+      background: #ffe3ef;
+    }
+
+    /* ANIMASI SCROLL */
+    .animate{
+      opacity: 0;
+      transform: translateY(50px);
+      transition: 1s ease;
+    }
+
+    .animate.show{
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <div class="header animate">
+    <h1>Undangan Pernikahan</h1>
+    <hr>
+    <p>
+      Dengan penuh rasa syukur, kami mengundang Bapak/Ibu/Saudara/i
+      untuk hadir di acara pernikahan kami.
+    </p>
+  </div>
+
+  <!-- FOTO -->
+  <div class="gallery animate">
+    <img src="https://images.unsplash.com/photo-1529634897861-1c3e7c46d20d?auto=format&fit=crop&w=600&q=80">
+    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1d?auto=format&fit=crop&w=600&q=80">
+    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=600&q=80">
+  </div>
+
+  <!-- MEMPELAI -->
+  <div class="card animate">
+    <h2>💍 Mempelai</h2>
+    <div class="names">Aulia & Reza</div>
+    <div class="info">
+      Putri dari Bapak .... & Ibu .... <br>
+      Putra dari Bapak .... & Ibu ....
+    </div>
+  </div>
+
+  <!-- AKAD -->
+  <div class="card animate">
+    <h2>📅 Akad Nikah</h2>
+    <div class="info">
+      Minggu, 10 Agustus 2026 <br>
+      Pukul 09.00 WIB - Selesai
+    </div>
+  </div>
+
+  <!-- RESEPSI -->
+  <div class="card animate">
+    <h2>🎉 Resepsi</h2>
+    <div class="info">
+      Minggu, 10 Agustus 2026 <br>
+      Pukul 11.00 WIB - Selesai
+    </div>
+  </div>
+
+  <!-- LOKASI -->
+  <div class="card animate">
+    <h2>📍 Lokasi Acara</h2>
+    <div class="info">
+      Gedung Serbaguna Bahagia <br>
+      Jl. Mawar Indah No. 10, Medan
+    </div>
+
+    <a class="btn btn-maps" href="https://maps.google.com" target="_blank">
+      📌 Buka Google Maps
+    </a>
+  </div>
+
+  <!-- COUNTDOWN -->
+  <div class="card animate">
+    <h2>⏳ Countdown Menuju Hari Bahagia</h2>
+    <div class="countdown" id="countdown">Loading...</div>
+  </div>
+
+  <!-- WA -->
+  <div class="card animate">
+    <h2>💌 Konfirmasi Kehadiran</h2>
+    <p>Silakan konfirmasi kehadiran melalui WhatsApp</p>
+
+    <a class="btn btn-wa" href="https://wa.me/6281234567890?text=Halo%20saya%20ingin%20konfirmasi%20kehadiran%20di%20acara%20pernikahan" target="_blank">
+      📱 Konfirmasi WhatsApp
+    </a>
+  </div>
+
+  <footer>
+    Terima kasih atas doa dan kehadirannya 🙏 <br>
+    © 2026 Undangan Pernikahan
+  </footer>
+
+
+  <script>
+    // COUNTDOWN
+    const eventDate = new Date("August 10, 2026 09:00:00").getTime();
+
+    setInterval(() => {
+      const now = new Date().getTime();
+      const distance = eventDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("countdown").innerHTML =
+        days + " Hari " + hours + " Jam " + minutes + " Menit " + seconds + " Detik";
+
+      if (distance < 0) {
+        document.getElementById("countdown").innerHTML = "Acara Sedang Berlangsung 🎉";
+      }
+    }, 1000);
+
+    // ANIMASI MUNCUL SAAT SCROLL
+    const elements = document.querySelectorAll(".animate");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add("show");
+        }
+      });
+    }, { threshold: 0.2 });
+
+    elements.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
